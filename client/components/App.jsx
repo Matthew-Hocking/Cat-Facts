@@ -15,11 +15,10 @@ function App() {
         .catch(err => console.error(err))
       )}
 
-  
   return (
     <>
       <div className="app">
-        
+
         <div className="title">
           <h1>CATFACT:</h1>
         </div>
@@ -28,9 +27,7 @@ function App() {
           <p>{fact}</p>
         </div>
 
-        <div className="button">
-          <button onClick={newFact}>Another Fact</button>
-        </div>
+        <button onClick={newFact}>Another Fact</button>
 
       </div>
     </>

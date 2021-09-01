@@ -1,8 +1,11 @@
 body {
-  background: url('/images/cat-fur.jpg');
+  background-image: url("/cat.png");
 }
 
 .app {
+  width: 20%;
+  height: 30%;
+  min-width: 900px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -19,8 +22,20 @@ body {
 
 .fact {
   font-family: 'Coda', cursive;
+  padding-bottom: 10px;
 }
 
-.button {
-padding: 1rem;
+button {
+  font-family: 'Coda', cursive;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: 3px solid #ffff00;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #FFFF00;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
