@@ -1,0 +1,26 @@
+body {
+  background: url('/images/cat-fur.jpg');
+}
+
+.app {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #FFFF00;
+  padding: 100px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Coda', cursive;
+  font-size: xx-large;
+}
+
+.fact {
+  font-family: 'Coda', cursive;
+}
+
+.button {
+padding: 1rem;
+}

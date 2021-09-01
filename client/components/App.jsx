@@ -1,23 +1,39 @@
 import React, { useState, useEffect } from 'react'
 
-import { getWelcome } from '../api'
+import { getFact } from '../api'
 
-function App () {
-  const [welcomeStatement, setWelcomeStatement] = useState('')
+function App() {
+  const [fact, setFact] = useState([])
 
   useEffect(() => {
-    getWelcome()
-      .then(res => {
-        setWelcomeStatement(res.statement)
-        return null
-      })
-      .catch((err) => {
-        console.error(err.message)
-      })
-  })
+    newFact()
+  }, [])
 
+  const newFact = () => {
+    getFact()
+      .then(fact => setFact(fact)
+        .catch(err => console.error(err))
+      )}
+
+  
   return (
-    <h1>{welcomeStatement}</h1>
+    <>
+      <div className="app">
+        
+        <div className="title">
+          <h1>CATFACT:</h1>
+        </div>
+
+        <div className="fact">
+          <p>{fact}</p>
+        </div>
+
+        <div className="button">
+          <button onClick={newFact}>Another Fact</button>
+        </div>
+
+      </div>
+    </>
   )
 }
 
