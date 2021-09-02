@@ -12,7 +12,9 @@ function App() {
   const newFact = () => {
     getFact()
       .then(fact => setFact(fact)
-        .catch(err => console.error(err))
+        .catch(error => {
+          console.error(error)
+        })
       )}
 
   return (
@@ -26,10 +28,12 @@ function App() {
         <div className="fact">
           <p>{fact}</p>
         </div>
+        
+        <div className="button">
+          <button onClick={newFact}>Another Fact</button>
+        </div>
 
-        <button onClick={newFact}>Another Fact</button>
-
-      </div>
+        </div>
     </>
   )
 }
