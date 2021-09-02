@@ -12,9 +12,6 @@ function App() {
   const newFact = () => {
     getFact()
       .then(fact => setFact(fact)
-        .catch(error => {
-          console.error(error)
-        })
       )}
 
   return (

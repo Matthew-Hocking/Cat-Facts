@@ -24,14 +24,14 @@ body {
   border: 7px solid #FFFF00;
   padding: 20px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.90);
 }
 
 .title {
   font-family: 'Coda', cursive;
   font-size: 50px;
   height: 60px;
-  padding: 10px;
+  padding: 25px;
 }
 
 .fact {
@@ -41,11 +41,12 @@ body {
   font-family: 'Coda', cursive;
   font-size: 20px;
   margin-top: 5%;
+  margin-bottom: 2%;
   height: 120px;
 }
 
 .button {
-  height: 60px;
+  height: 90px;
 }
 
 button {
