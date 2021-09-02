@@ -16,7 +16,9 @@ function App() {
 
   return (
     <>
-      <div className="app">
+      <main>
+        <div className="bg-img"></div>
+        <div className="app">
 
         <div className="title">
           <h1>CATFACT:</h1>
@@ -31,6 +33,7 @@ function App() {
         </div>
 
         </div>
+      </main>
     </>
   )
 }
