@@ -9,3 +9,10 @@ export function getWelcome () {
     .then(response => response.body)
 }
 // ***   ***   ***
+
+export function getFact() {
+  return request
+  .get('https://catfact.ninja/fact')
+  .then(response => response.body.fact)
+  .catch(error => {console.error(error)})
+}
